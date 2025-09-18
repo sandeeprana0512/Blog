@@ -35,6 +35,10 @@ let posts = [
 
 let lastId = 3;
 
+app.get('/', (req, res) => {
+  res.render('home');
+});
+
 app.get("/posts", (req, res) => {
   console.log(posts);
   res.json(posts);
